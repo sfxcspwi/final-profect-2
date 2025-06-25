@@ -1,1 +1,50 @@
 @import "../utils/variables";
+
+.gallery
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1000px;
+
+    &__bg
+    {
+        background-image: url(/img/gallery_bg.png);
+        height: 2208px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__title
+    {
+        margin: 0px 0px 40px 0px;
+        padding-top: 127px;
+        text-align: center;
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: $accent;
+    }
+
+    &__list
+    {
+        display: flex;
+        gap: 30px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+.arrow__wrap
+{
+    display: flex;
+    position: absolute;
+    top: 380px;
+    width: 1400px;
+    justify-content: space-between;
+}
+

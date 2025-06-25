@@ -107,74 +107,116 @@
 
     <main>
 
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                        <h2>The walkways of Indonesia spellbind</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. </p>
-                        <button>Learn More</button>
+        <section class="hero__bg">
+
+            <div class="container hero">
+
+                <ul class="hero__list">
+
+                    <li class="hero__item">  
+                        <img class="hero__img" srcset="/img/nature-path.png 1x, /img/nature-path@2x.png 2x" alt="">
+                        <div>
+                            <h2 class="hero__title">The walkways of Indonesia spellbind</h2>
+                            <p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. </p>
+                            <button class="hero__btn">Learn More</button>
+                        </div>
                     </li>
                     
-                    <li>
-                        <img src="" alt="">
-                        <h2>Perfect beaches exude relaxation and fun</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. </p>
-                        <button>Learn More</button>
+                    <li class="hero__item">
+                        <img class="hero__img"  srcset="/img/palms.png 1x, /img/palms@2x.png 2x" alt="">
+
+                        <div>
+                            <h2 class="hero__title">Perfect beaches exude relaxation and fun</h2>
+                            <p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. </p>
+                            <button class="hero__btn">Learn More</button>
+                        </div>
                     </li>
                 </ul>
-            </div>
-        </section>
 
-        <section>
-            <div>
-                <h2>Explore Our Secrets</h2>
-                <div></div>
-                <div></div>
-                <div></div>
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-
-            <div>
-                <h2>By The Numbers</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            <div>
-                <ul>
-                    <li>
-                        <h3>100+</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
-                    </li>
-
-                    <li>
-                        <h3>43,000+</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.</p>
-                    </li>
-
-                    <li>
-                        <h3>30+</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
-                    </li>
-                </ul>
             </div>
 
         </section>
 
-        <section>
-            <div>
-                <h2>Our hills and valleys are like nothing you’ve seen.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
-                <button>Learn More</button>
+        <div class="gallery__bg">
+
+            <section class="container">
+
+                <div class="gallery">
+
+                    <h2 class="gallery__title">Explore Our Secrets</h2>
+                    
+                    <ul class="gallery__list">
+                        <li><img srcset="/img/sunset-rocks.png 1x, /img/sunset-rocks@2x.png 2x" alt=""></li>
+                        <li><img srcset="/img/kids-in-nature.png 1x, /img/kids-in-nature@2x.png 2x" alt=""></li>
+                        <li><img srcset="/img/wild-fields.png 1x, /img/wild-fields@2x.png 2x" alt=""></li>
+                    </ul>
+
+                    <div class="arrow__wrap">
+                        <svg class="gallery-svg" width="15px" height="24px"> 
+                            <use href="./symbols.svg#arrow-to-left"></use>
+                        </svg>
+
+
+                        <svg class="gallery-svg" width="15px" height="24px"> 
+                            <use href="./symbols.svg#arrow-to-right"></use>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <svg class="gallery-svg" width="196px" height="19px"> 
+                            <use href="./symbols.svg#circles"></use>
+                        </svg>
+                    </div>
+                    
+
+                </div>
+
+            </section>
+
+            <section class="container">
+
+                <div class="statistic__top">
+                    <h2 class="statistic__title">By The Numbers</h2>
+                    <p class="statistic__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="statistic__data">
+                    <ul class="statistic__list">
+                        <li class="statistic__item">
+                            <h3 class="statistic__value">100+</h3>
+                            <p class="statistic__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                        </li>
+
+                        <li class="statistic__item">
+                            <h3 class="statistic__value">43,000+</h3>
+                            <p class="statistic__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.</p>
+                        </li>
+
+                        <li class="statistic__item">
+                            <h3 class="statistic__value">30+</h3>
+                            <p class="statistic__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="secret__bg">
+
+            <div class="container">
+
+                <div class="secret">
+                
+                    <h2 class="secret__title">Our hills and valleys are like nothing you’ve seen.</h2>
+                    <p class="secret__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
+                    <button class="secret__button">Learn More</button>
+
+                </div>
+
             </div>
+
         </section>
 
         <section>
