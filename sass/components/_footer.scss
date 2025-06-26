@@ -4,95 +4,81 @@
 .footer
 {
     background-color: $accent;
+
+    &__logo
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-left: 13px;
+    }
+
+    &__logo-text
+    {
+        font-family: "Roboto";
+        font-weight: 900;
+        font-size: 23.96px;
+        line-height: 81%;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        color: $ui-primary;
+        text-wrap: wrap;
+    }
+
+    &__logo-highlight
+    {
+        display: block;
+        color: $text-primary;
+    }
+
+    &__nav
+    {
+        display: flex;
+        gap: 36px;
+        padding: 0px;
+        margin-left: 124px;
+    }
+
+    &__nav-link
+    {
+        @extend %footer-typography;
+    }
+
+    &__socials-link
+    {
+        @extend %footer-typography;
+    }
+
+    &__socials
+    {
+        display: flex;
+        gap: 22px;
+    }
+
+    &__content
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    &__meta
+    {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__wrapper
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 136px;
+        align-items: center;
+    }
+
+    &__copyright
+    {
+        @extend %footer-typography;
+    }
 }
 
-.footer__logo
-{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-left: 13px;
-}
-
-.footer__logo-text
-{
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 23.96px;
-    line-height: 81%;
-    letter-spacing: 0.32px;
-    text-transform: uppercase;
-    color: $ui-primary;
-    text-wrap: wrap;
-}
-
-.footer__logo-highlight
-{
-    display: block;
-    color: $text-primary;
-}
-
-.footer__nav
-{
-    display: flex;
-    gap: 36px;
-    padding: 0px;
-    margin-left: 124px;
-}
-
-.footer__nav-link
-{
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-    color: $text-primary;
-}
-
-.footer__socials-link
-{
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-    color: $text-primary;
-}
-
-.footer__socials
-{
-    display: flex;
-    gap: 22px;
-}
-
-.footer__content
-{
-    display: flex;
-    align-items: center;
-}
-
-.footer__meta
-{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.footer__wrapper
-{
-    display: flex;
-    justify-content: space-between;
-    height: 136px;
-    align-items: center;
-}
-
-.footer__copyright
-{
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-    color: $text-primary;
-}

@@ -1,0 +1,14 @@
+@mixin button($font-size, $padding, $radius) 
+{
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: $text-primary;
+  background-color: $ui-primary;
+  border: none;
+  border-radius: $radius;
+  padding: $padding;
+}

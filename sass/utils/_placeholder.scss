@@ -1,0 +1,17 @@
+%text-base
+{
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+%footer-typography
+{
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: $text-primary;
+}

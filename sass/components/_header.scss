@@ -1,4 +1,6 @@
 @import "../utils/variables";
+@import "../utils/placeholder";
+@import "../utils/mixins";
 
 .header
 {
@@ -100,20 +102,10 @@
         margin-bottom: 21px;
     }
 
-    &__cta-btn
+    &__cta-btn 
     {
-        background-color: $ui-primary;
-        font-family: "DM Sans";
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0%;
-        text-align: center;
+        @include button(20px, 26px 64px, 211px);
         vertical-align: middle;
-        color: $text-primary;
-        border: none;
-        border-radius: 211px;
-        padding: 26px 64px;
     }
 
     &__content-block
@@ -276,10 +268,7 @@
     }
     &__text
     {
-        font-family: "DM Sans";
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
+        @extend %text-base;
         letter-spacing: 0.5px;
         color: #939393;
         margin-left: 70px;
