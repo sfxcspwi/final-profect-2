@@ -8,6 +8,36 @@
     height: 1080px;
     position: relative;
 
+    &__logo
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-left: 13px;
+    }
+
+    &__logo-text
+    {
+        font-family: "Roboto";
+        font-weight: 900;
+        font-size: 23.96px;
+        line-height: 81%;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        color: $text-primary;
+        text-wrap: wrap;
+
+    }
+
+    &__logo-highlight
+    {
+        display: block;
+        background: linear-gradient( to bottom, $text-primary 7.41%, #018394 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
 
     &__info
     {
@@ -28,12 +58,6 @@
         padding-right: 15px;
         margin: 0 auto;
         
-    }
-
-    &__logo
-    {
-        margin-left: 13px;
-        margin-top: 10px;
     }
 
     &__top

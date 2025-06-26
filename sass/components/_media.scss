@@ -3,87 +3,88 @@
 .media
 {
     height: 1388px;
+
+    &__top
+    {
+        padding: 140px 0px 71px 0px ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title
+    {
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        color: $accent;
+        margin: 0px;
+
+    }
+
+    &__desc
+    {
+        font-family: "DM Sans";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 1%;
+        text-align: center;
+        color: $text-info;
+        width: 500px;
+    }
+
+    &__gallery
+    {
+        position: relative;
+        width: 1170px;
+        height: 770px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    &__image
+    {
+        position: absolute;
+    }
+
+    &__image:nth-child(2)
+    {
+        bottom: 0;
+        left: 0;
+    }
+
+    &__image:nth-child(3)
+    {
+        top: 0;         
+        left: 50%;          
+        transform: translateX(-50%);
+    }
+
+    &__image:nth-child(4)
+    {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__image:nth-child(5)
+    {
+        top: 0;
+        right: 0;
+    }
+
+
+    &__image:nth-child(6)
+    {
+        bottom: 0;
+        right: 0;
+    }
 }
 
-.media__top
-{
-    padding: 140px 0px 71px 0px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.media__title
-{
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    color: $accent;
-    margin: 0px;
-
-}
-
-.media__desc
-{
-    font-family: "DM Sans";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 1%;
-    text-align: center;
-    color: $text-info;
-    width: 500px;
-}
-
-.media__gallery
-{
-    position: relative;
-    width: 1170px;
-    height: 770px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.media__image
-{
-    position: absolute;
-}
-
-.media__image:nth-child(2)
-{
-    bottom: 0;
-    left: 0;
-}
-
-.media__image:nth-child(3)
-{
-    top: 0;         
-    left: 50%;          
-    transform: translateX(-50%);
-}
-
-.media__image:nth-child(4)
-{
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.media__image:nth-child(5)
-{
-    top: 0;
-    right: 0;
-}
-
-
-.media__image:nth-child(6)
-{
-    bottom: 0;
-    right: 0;
-}

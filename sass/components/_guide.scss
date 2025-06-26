@@ -1,1 +1,107 @@
 @import "../utils/variables";
+
+.guide
+{
+    background-color: #DCE8F2;
+    height: 1432px;
+
+    &__content
+    {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__button
+    {
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: $text-primary;
+        background-color: $ui-primary;
+        padding: 18.5px 56px;
+        border: none;
+        border-radius: 40px;
+    }
+
+    &__item
+    {
+        width: 1040px;
+    }
+
+    &__item:nth-child(1)
+    {
+        margin-bottom: 102px;
+    }
+
+    &__item:nth-child(2)
+    {
+        margin-bottom: 77px;
+    }
+
+
+    &__title
+    {
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: $accent;
+        margin: 0px 0px 0px 80px;
+    }
+
+    &__top
+    {
+        padding-top: 100px;
+        margin-bottom: 45px;
+    }
+
+    &__text
+    {
+        font-family: "DM Sans";
+        font-weight: 400;
+        font-size: 23.47px;
+        line-height: 38.15px;
+        letter-spacing: 0px;
+        color: $text-info-op;
+    }
+
+    &__subtitle
+    {
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 26.41px;
+        line-height: 41.08px;
+        letter-spacing: 0px;
+        color: $accent;
+        margin-top: 0px;
+    }
+
+    &__list
+    {
+        gap: 80px;
+        margin: 0px;
+    }
+
+    &__image-block
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 45px;
+        align-items: center;
+        width: 750px;
+        margin: 90px 0px 60px 0px;
+    }
+
+    &__video
+    {
+        width: 250px;
+        height: 165px;
+        border-radius: 10px;
+        object-fit: cover
+    }
+}
