@@ -1,5 +1,7 @@
 @import "../utils/variables";
 @import "../utils/placeholder";
+@import "../utils/mixins";
+
 .about
 {
     
@@ -58,7 +60,7 @@
 
     &__text
     {
-        @extend %text-base;
+        @include text-base;
         letter-spacing: 0.5px;
         color: $text-primary;
         opacity: 0.7;
@@ -93,4 +95,64 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) 
+{
+
+    .about
+    {
+        
+        &__intro
+        {
+            padding: 83px 0px 0px 0px;
+            margin-bottom: 40px;
+        }
+
+        &__title
+        {
+            margin-bottom: 55px;
+        }
+
+        &__intro--video
+        {
+            width: 314px;
+            height: 192px;
+        }
+
+        &__list
+        {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &__item
+        {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        &__clip-box
+        {
+            width: 314px;
+            height: 176px;
+        }
+
+        &__text
+        {
+            width: 100%;
+            text-align: center;
+            @include text-base-mobile;
+        }
+
+        &__subtitle
+        {
+            text-align: center;
+            margin: 0px 0px 30px 0px;
+        }
+
+        }
+
+
 }

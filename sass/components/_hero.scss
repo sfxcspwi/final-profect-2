@@ -36,11 +36,12 @@
 
     &__desc
     {
-        @extend %text-base;
+        @include text-base;
         letter-spacing: 1%;
         color: $text-secondary;
         opacity: 0.9;
         margin: 0px 0px 32px 0px;
+
     }
 
     &__btn 
@@ -70,9 +71,45 @@
 
 @media (min-width:320px) and (max-width: 1200px)
 {
-    .hero__bg
+    .hero
     {
-        background-size: cover;
+        padding-top: 40px;
+        padding-bottom: 48px;
+            
+        &__bg
+        {
+            background-size: cover;
+            height: 1384px;
+        }
+
+        &__img
+        {
+            width: 314px;
+            height: 232px;
+            object-fit: cover;
+        }
+
+        &__item
+        {
+
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 56px;
+        }
+
+        &__desc
+        {
+            @include text-base-mobile;
+        }
+
+        &__btn
+        {
+            @include button(18px, 22px 108px, 32px);
+            text-wrap: nowrap;
+        }
+
     }
+
 }
 

@@ -48,3 +48,42 @@
     justify-content: space-between;
 }
 
+@media (min-width: 320px) and (max-width: 1200px) 
+{
+
+    .gallery
+    {
+        margin-bottom: 1350px;
+
+        &__bg
+        {
+            background-size: cover;
+            height: 100%;
+        }
+
+        &__title
+        {
+            padding-top: 44px;
+            margin-bottom: 0px;
+        }
+
+        &__list li:first-child img 
+        {
+        display: none;
+        }
+
+        &__list li:last-child img 
+        {
+            display: none;
+        }
+
+    }
+
+
+    .arrow__wrap
+    {
+        top: 320px;
+        width: 460px;
+    }
+
+}

@@ -12,3 +12,19 @@
   border-radius: $radius;
   padding: $padding;
 }
+
+@mixin text-base 
+{
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin text-base-mobile 
+{
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
