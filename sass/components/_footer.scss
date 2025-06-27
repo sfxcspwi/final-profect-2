@@ -90,3 +90,67 @@
     }
 }
 
+
+@media (min-width: 320px) and (max-width: 1200px) 
+{
+
+    .footer
+    {
+       height: 746px;
+
+               &__nav
+        {
+            flex-wrap: wrap;
+            margin: 36px 0px 0px 0px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__logo
+        {
+            margin: 0px;
+            width: 250px;
+            justify-content: center;
+        }
+
+        &__socials
+        {
+            gap: 48px;
+            padding: 0px;
+        }
+
+        &__content
+        {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__scroll-btn
+        {
+            right: 85px;
+            top: -55px;
+        }
+
+        &__wrapper
+        {
+            padding: 110px 0px 0px 0px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        &__copyright
+        {
+            text-wrap: nowrap;
+        }
+
+        &__meta
+        {
+            gap: 0px;
+            flex-direction: column;
+        }
+    }
+
+
+}

@@ -5,6 +5,7 @@
   line-height: 28px;
   letter-spacing: 0.5px;
   color: #ffffff;
+  text-align: center;
 }
 
 .about__bg {
@@ -262,7 +263,94 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.guide__show-more {
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #DD2242;
+  display: none;
+}
 
+.number__svg {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .guide {
+    height: 100%;
+  }
+  .guide__top {
+    padding: 30px 0px 0px 0px;
+  }
+  .guide__button {
+    display: none;
+  }
+  .guide__title {
+    margin: 0px;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .guide__item {
+    width: 314px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  .guide-svg {
+    display: none;
+  }
+  .guide__list {
+    padding: 0px;
+  }
+  .guide__item:nth-child(1) {
+    margin-bottom: 32px;
+  }
+  .guide__item:nth-child(2) {
+    margin-bottom: 32px;
+  }
+  .guide__video {
+    width: 100%;
+    height: 208px;
+  }
+  .guide__subtitle {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 150%;
+    width: 314px;
+  }
+  .guide__image-block h3:nth-of-type(1) {
+    display: none;
+  }
+  .guide__image-block {
+    flex-wrap: wrap;
+    margin: 32px 0px 40px 0px;
+    justify-content: center;
+  }
+  .guide__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 314px;
+    margin: 0px;
+    text-align: center;
+  }
+  .guide__show-more {
+    display: block;
+    text-align: center;
+    margin: 0px;
+  }
+  .guide__content {
+    padding-bottom: 80px;
+  }
+  .number__svg {
+    display: block;
+    margin-bottom: 26px;
+  }
+}
 .footer__copyright, .footer__socials-link, .footer__nav-link {
   font-family: "DM Sans";
   font-weight: 700;
@@ -270,6 +358,7 @@
   line-height: 28px;
   letter-spacing: 0.5px;
   color: #ffffff;
+  text-align: center;
 }
 
 .header {
@@ -689,6 +778,7 @@
   line-height: 28px;
   letter-spacing: 0.5px;
   color: #ffffff;
+  text-align: center;
 }
 
 .hero {
@@ -801,6 +891,7 @@
   line-height: 28px;
   letter-spacing: 0.5px;
   color: #ffffff;
+  text-align: center;
 }
 
 .media {
@@ -941,6 +1032,7 @@
   line-height: 28px;
   letter-spacing: 0.5px;
   color: #ffffff;
+  text-align: center;
 }
 
 .secret {
@@ -1031,6 +1123,7 @@
   line-height: 28px;
   letter-spacing: 0.5px;
   color: #ffffff;
+  text-align: center;
 }
 
 .statistic__title {
@@ -1175,6 +1268,48 @@
   top: -55px;
 }
 
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer {
+    height: 746px;
+  }
+  .footer__nav {
+    flex-wrap: wrap;
+    margin: 36px 0px 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__logo {
+    margin: 0px;
+    width: 250px;
+    justify-content: center;
+  }
+  .footer__socials {
+    gap: 48px;
+    padding: 0px;
+  }
+  .footer__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__scroll-btn {
+    right: 85px;
+    top: -55px;
+  }
+  .footer__wrapper {
+    padding: 110px 0px 0px 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .footer__copyright {
+    text-wrap: nowrap;
+  }
+  .footer__meta {
+    gap: 0px;
+    flex-direction: column;
+  }
+}
 a {
   text-decoration: none;
 }
