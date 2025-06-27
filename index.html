@@ -18,7 +18,7 @@
                 <div class="header__nav">
 
                     <div class="header__logo">
-                        <svg class="" width="50px" height="49px"> 
+                        <svg class="header__logo-svg" > 
                             <use href="./symbols.svg#flower"></use>
                         </svg>
 
@@ -39,7 +39,7 @@
                         <use href="./symbols.svg#search"></use>
                     </svg>
 
-                    <button class="hamburgerBtn" id="hamburgerBtn" onclick="openMenu()">
+                    <button class="hamburger-btn" id="hamburgerBtn" onclick="openMenu()">
                         <div class="hamburger-line"></div>
                         <div class="hamburger-line"></div>
                         <div class="hamburger-line"></div>
@@ -109,6 +109,7 @@
         </div>
     </header>
 
+    <div id="mainPage">
     <main>
 
         <section class="hero__bg">
@@ -385,10 +386,57 @@
 
                 </div>
 
+            
+                <svg class="footer__scroll-btn" width="124px" height="124px"> 
+                    <use href="./symbols.svg#scroll-btn"></use>
+                </svg>
+                
+
             </div>
 
         </div>
 
     </footer>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">  
+
+        <button class="close-btn" onclick="closeMenu()">✕</button>
+
+        <ul class="menu-content">
+            <li><a href="" class="menu__links">Destinations</a></li>
+            <li><a href="" class="menu__links">Experiences</a></li>
+            <li><a href="" class="menu__links">About</a></li>
+            <li><a href="" class="menu__links">Gallery</a></li>
+        </ul>
+
+        <ul class="menu-contact">
+
+            <li class="menu-contact__item">
+                <div>
+                    <a href="" class="item__number ">+38 000 111 22 22</a>
+                </div>
+            </li>
+
+            <li class="menu-contact__item">
+                
+                <div>
+                    <a href="" class="item__email ">info@ExploreIndonesia.com</a>
+                </div>
+            </li>
+
+        </ul>
+
+        <ul class="menu-social">
+            <li class="menu-social__item"><a href="" class="social__links">Instagram</a></li>
+            <li class="menu-social__item"><a href="" class="social__links">Twitter</a></li>
+            <li class="menu-social__item"><a href="" class="social__links">Facebook</a></li>
+            <li class="menu-social__item"><a href="" class="social__links">Linkedin</a></li>
+        </ul>
+        
+    </div>
+
+
+    <script src="./mobilemenu.js"></script>
 </body>
 </html>

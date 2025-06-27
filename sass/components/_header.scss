@@ -113,6 +113,12 @@
         width: 630px;
     }
 
+    &__logo-svg
+    {
+        width: 49px;
+        height: 49px;
+    }
+
 
 }
 
@@ -153,7 +159,7 @@
 
 
 
-.hamburgerBtn
+.hamburger-btn
 {
     background-color: transparent;
     border: none;
@@ -282,3 +288,271 @@
     }
 
 }
+
+.menu-overlay
+{
+    display: none;
+}
+
+
+
+@media (min-width:320px) and (max-width: 1200px)
+{ 
+    .header__container 
+    {
+        max-width: 314px;
+    }
+
+    .indicator
+    {
+        display: none;
+    }
+
+    .side-socials
+    {
+        display: none;
+    }
+
+    .nav__list
+    {
+        display: none;
+    }
+
+    .header__control
+    {
+        margin: 0px;
+        width: 67px;
+    }
+
+    .header
+    {
+        background-size: cover;
+    }
+
+    .header__logo-svg
+    {
+        width: 42px;
+        height: 42px;
+    }
+
+    .header__logo-text
+    {
+        font-size: 20.84px;
+        letter-spacing: 0.27px;
+    }
+
+    .header__logo
+    {
+        margin: 0px;
+    }
+    
+    .header__title
+    {
+        font-size: 58.15px;
+        line-height: 63px;
+        letter-spacing: 0%;
+        margin: 45px 0px 8px 0px;
+    }   
+
+    .header__content-block
+    {
+        width: 100%;
+    }
+
+    .header__main
+    {
+        margin: 0px;
+    }
+
+    .header__cta-btn 
+    {
+        @include button(20px, 21px 85px, 211px);
+        text-wrap: nowrap;
+    }
+
+    .info-card
+    {
+        margin: 54px 0px 0px 0px;
+    }
+
+    .info-card__item
+    {
+        width: 314px;
+        height: 157px;
+    }
+
+    .info-card__list
+    {
+        flex-wrap: wrap;
+    }
+
+    .header__video
+    {
+    
+        width: 314px;
+        margin-bottom: 12px;
+    }
+
+    .header__info
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-card__number
+    {
+        margin: 20px 0px 4px 32px;
+    }
+
+    .info-card__title
+    {
+      margin: 0px 0px 4px 32px;
+    }
+
+    .info-card__text
+    {
+        margin: 0px 0px 0px 32px;
+    }
+
+    .info-card__list
+    {
+        margin: 0px;
+    }
+
+ 
+    .menu-overlay 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 100;
+        display: block;
+        background-color: #b07b5a;
+    }
+
+    .menu-overlay.active 
+    {
+        transform: translateX(0);
+    }
+
+    .header
+    {
+        z-index: 10;
+    }
+
+    .close-btn
+    {
+        background-color: transparent;
+        border: 0px;
+        width: 40px;
+        height: 40px;
+        color: $text-primary;
+        font-size: 32px;
+        font-weight: 900;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .menu-contact__item
+    {
+        width: 300px;
+        display: flex;
+        gap: 10px;
+    }
+    
+
+    .close-btn:hover
+    {
+        color: #1c8891;
+    }
+
+    .item__email
+    {
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: $text-primary;
+        text-decoration: none;
+    }
+
+    .item__number
+    {
+        text-decoration: none;
+        color: $text-primary;
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 100%;
+        letter-spacing: 2%;
+    }
+
+    .menu-content
+    {
+        margin-top: 48px;
+        margin-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        width: 220px;
+    }
+
+    .menu__links
+    {
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        text-align: center;
+        color: $text-primary;
+    }
+
+    .menu-social
+    {
+        display: flex;
+        margin-left: 40px;
+        margin-top: 64px;
+    }
+
+    .social__links
+    {
+        color: $text-primary;
+        text-decoration: none;
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 2%;
+
+    }
+
+    .menu-contact
+    {
+        margin-top: 302px;
+        margin-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        gap: 32px;
+    }
+
+    .menu-social__item
+    {
+        border-right: 2px solid #1c8891;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .menu-social li:last-child 
+    {
+        border-right: none;
+    }
+
+
+} 

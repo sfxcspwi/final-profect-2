@@ -26,3 +26,12 @@ li
     padding-right: 15px;
     margin: 0 auto;
 }
+
+@media (min-width:320px) and (max-width: 1200px)
+{ 
+    .container 
+    {
+        max-width: 314px;
+    }
+    
+} 

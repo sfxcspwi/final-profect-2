@@ -64,6 +64,15 @@
     &__list
     {
         margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media (min-width:320px) and (max-width: 1200px)
+{
+    .hero__bg
+    {
+        background-size: cover;
     }
 }
 
